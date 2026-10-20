@@ -1,0 +1,50 @@
+<?php include "auth.php"; wajib_staff(); ?>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"><title>Tambah Data Peminjaman</title>
+</head>
+<body>
+
+<h1>Tambah Data Peminjaman</h1>
+
+<form action="simpan_peminjaman.php" method="post">
+
+  <label>Buku ID:</label><br>
+  <input type="number" name="buku_id" required><br><br>
+
+  <label>Anggota ID:</label><br>
+  <input type="number" name="anggota_id" required><br><br>
+
+  <label>User ID (Petugas):</label><br>
+  <input type="number" name="user_id" required><br><br>
+
+  <label>Jumlah Buku:</label><br>
+  <input type="number" name="jumlah" value="1" required><br><br>
+
+  <label>Tanggal Pinjam:</label><br>
+  <input type="date" name="tanggal_pinjam" required><br><br>
+
+  <label>Lama Pinjam (Hari):</label><br>
+  <input type="number" name="lama_pinjam" placeholder="Misal: 7" required><br><br>
+
+  <label>Keterangan:</label><br>
+  <textarea name="keterangan" rows="3" cols="30"></textarea><br><br>
+
+  <label>Status:</label><br>
+  <select name="status" required>
+      <option value="dipinjam">Dipinjam</option>
+      <option value="sudah dikembalikan">Sudah Dikembalikan</option>
+  </select><br><br>
+
+  <button type="submit">Simpan</button>
+  <button type="reset">Reset</button>
+
+  <a href="tampilan_peminjaman.php">
+    <button type="button">Kembali</button>
+  </a>
+
+</form>
+
+</body>
+</html>

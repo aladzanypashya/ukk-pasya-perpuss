@@ -1,0 +1,39 @@
+<?php include "auth.php"; wajib_staff(); ?>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tambah Data User</title>
+</head>
+<body>
+
+<h1>Tambah Data User</h1>
+
+<form action="simpan_user.php" method="post">
+
+  <label>Nama Lengkap:</label><br>
+  <input type="text" name="nama" required><br><br>
+
+  <label>Username:</label><br>
+  <input type="text" name="username" required><br><br>
+
+  <label>Password:</label><br>
+  <input type="password" name="password" required><br><br>
+
+  <label>Level:</label><br>
+  <select name="level" required>
+      <option value="">-- Pilih Level --</option>
+      <option value="admin">Admin</option>
+      <option value="petugas">Petugas</option>
+  </select><br><br>
+
+  <button type="submit">Simpan</button>
+  <button type="reset">Reset</button>
+
+  <a href="tampil_user.php">
+    <button type="button">Kembali</button>
+  </a>
+
+</form>
+
+</body>
+</html>

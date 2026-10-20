@@ -1,0 +1,42 @@
+body{
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+h2{
+    text-align: center;
+    color: navy;
+}
+
+table{
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background: white;
+}
+
+table, th, td{
+    border: 1px solid black;
+}
+
+th{
+    background-color: #007BFF;
+    color: white;
+    padding: 10px;
+}
+
+td{
+    padding: 8px;
+    text-align: center;
+}
+
+tr:nth-child(even){
+    background-color: #f2f2f2;
+}
+
+.footer{
+    text-align: center;
+    margin-top: 30px;
+    font-size: 18px;
+    font-weight: bold;
+}

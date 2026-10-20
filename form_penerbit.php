@@ -1,0 +1,29 @@
+<?php include "auth.php"; wajib_staff(); ?>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tambah Data Penerbit</title>
+</head>
+<body>
+
+<h1>Tambah Data Penerbit</h1>
+
+<form action="simpan_penerbit.php" method="post">
+
+  <label>Kode Penerbit:</label><br>
+  <input type="text" name="kode_penerbit" required><br><br>
+
+  <label>Nama Penerbit:</label><br>
+  <input type="text" name="nama_penerbit" required><br><br>
+
+  <button type="submit">Simpan</button>
+  <button type="reset">Reset</button>
+
+  <a href="tampilan_penerbit.php">
+    <button type="button">Kembali</button>
+  </a>
+
+</form>
+
+</body>
+</html>
